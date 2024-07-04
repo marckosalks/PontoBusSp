@@ -4,6 +4,13 @@
 
 Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de aplicações mobile Android.
 
+
+## Atualmente está assim:
+
+![image](https://github.com/marckosalks/PontoBusSp/assets/84982384/cd28965e-95bf-4fdb-9f5d-2c0d3ed965db)
+
+
+
 ## O Desafio
 
 Seu objetivo é criar um aplicativo que exiba dados sobre o transporte público da cidade de São Paulo, consultando a [API **Olho Vivo**](api.md) que provê informações em tempo real do monitoramento da frota de ônibus da cidade de São Paulo.
