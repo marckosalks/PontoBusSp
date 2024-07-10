@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PontoBusSp</string>
+    <string name="aqui_voc_se_acha">🚎 Aqui você se acha!</string>
+    <string name="ponto_bus_sp">🚎 Ponto Bus</string>
 </resources>

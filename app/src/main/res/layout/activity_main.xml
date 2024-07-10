@@ -8,6 +8,7 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+   <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -26,27 +27,28 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:title="🚎 Aqui você se acha!"
+                android:title="@string/ponto_bus_sp"
                 />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_search"
-                app:layout_constraintBottom_toBottomOf="@id/toolbar"
-                app:layout_constraintEnd_toEndOf="@id/toolbar"
-                app:layout_constraintTop_toTopOf="@id/toolbar"
-                android:paddingRight="25dp"
-                />
+       <SearchView
+           android:id="@+id/searchView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:queryHint="Search"
+           tools:ignore="MissingConstraints"
+           android:background="@color/white"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="🚎 Ponto Bus SP"
+        android:text="@string/aqui_voc_se_acha"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="20sp"
