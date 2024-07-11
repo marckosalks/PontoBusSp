@@ -1,32 +1,26 @@
 package com.marcos.pontobussp
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.ViewGroup
-import android.widget.FrameLayout
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.search.SearchView
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
-lateinit var bottomNavigationView: BottomNavigationView;
-
-class MainActivity : AppCompatActivity() {
-
-    @SuppressLint("MissingInflatedId")
+class SearchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_search)
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         //definaindo o icone que vai começar selecionado no menu
-        bottomNavigationView.setSelectedItemId(R.id.bottom_home);
+        bottomNavigationView.setSelectedItemId(R.id.bottom_search);
 
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.bottom_home -> {
+                    startActivity(Intent(applicationContext, MainActivity::class.java))
+                    finish()
                     true
                 }
 
@@ -37,9 +31,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.bottom_search -> {
-                    startActivity(Intent(applicationContext, SearchActivity::class.java))
-
-                    finish()
                     true
                 }
 
