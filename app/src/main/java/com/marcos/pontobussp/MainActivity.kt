@@ -3,9 +3,9 @@ package com.marcos.pontobussp
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.ViewGroup
-import android.widget.FrameLayout
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -14,8 +14,6 @@ import com.google.android.material.search.SearchView
 lateinit var bottomNavigationView: BottomNavigationView;
 
 class MainActivity : AppCompatActivity() {
-
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
